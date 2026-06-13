@@ -1,0 +1,16 @@
+body {
+    background-color:rgb(30, 20, 90);
+    background-image: url("../imgs/anh-dep-thien-nhien-thump.jpg");
+    background-size: cover;
+}
+p {
+    color: rgb(30, 20, 90);
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: "roboto", sans-serif;
+    text-align: justify; /*center left right justify*/
+    font-weight: 400;/*100 200 300 400 (nornal) 500 600 700 (bold) 800 *
+    text-decoration: overline;/*underline line-through overline*/
+    text-transform: none;/doi sang loai chu*uppercase   lowercase  capitalize none*/
+
+}
