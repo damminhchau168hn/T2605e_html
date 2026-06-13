@@ -1,6 +1,6 @@
 body {
-    background-color:;
-    background-image:
+
+   
 }
 p {
     color: rgb(30, 20, 90);
@@ -10,6 +10,6 @@ p {
     text-align: justify; /*center left right justify*/
     font-weight: 400;/*100 200 300 400 (nornal) 500 600 700 (bold) 800 *
     text-decoration: overline;/*underline line-through overline*/
-    text-transform: none;/doi sang loai chu*uppercase   lowercase  capitalize none*/
+    text-transform: none;/*doi sang loai chu*uppercase   lowercase  capitalize none*/
 
 }
