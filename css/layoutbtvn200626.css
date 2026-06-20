@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;/*dien tich tinh vao trong box*/
+    transition: all 200ms;
+}
+body{
+    background-color: #fafafa;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #333333;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: #ffa500;
+}
+img{
+    max-width: 100%;
+}
+/*style layout */
+.section{
+    float:left;
+    width: 100%;
+}
+.container {
+    float:none;
+    margin: 0 auto; /*top right button left. Auto laf ra giua man hinh*/
+    width: 12000 px; /*day la 3 thong so co dinh*/
+}
+.header{
+    background-color: beige;
+}
+@media screen and (max-width: 1366px) {
+    .item {
+        width: calc(33.3333% - 30px);
+    }
+    .container {
+        width: 1140px;
+    }
+}
+@media screen and (max-width: 922px) {
+    .item {
+        width: calc(50%-30px);
+    }
+    .container {
+        width: 950 ;
+    }
+}
+@media screen and (max-width: 766px) {
+    .item {
+        width: calc(100%-30px);
+    }
+    .container {
+        width: 950px;
+    }
+}
