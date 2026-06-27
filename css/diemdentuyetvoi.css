@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;/*dien tich tinh vao trong box*/
+    transition: all 200ms;
+}
+.hero-header {
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero-banner {
+  position: relative;
+  height: 320px; 
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), 
+                    url("../imgs/dia-diem-ngam-lua-chin-1.jpg");
+  background-size: cover;
+  background-position: center;
+  
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  color: #ffffff;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.hero-content p {
+  color: #e0e0e0;
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+/.hero-tabs {
+  background-color: #ffffff;
+  border-bottom: 1px solid #eee;
+}
+
+.hero-tabs ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around; /* Chia đều khoảng cách các tab */
+}
+
+.hero-tabs li {
+  padding: 15px 10px;
+  position: relative;
+}
+
+.hero-tabs li a {
+  text-decoration: none;
+  color: #555555;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+/* Tab đang được chọn (Active) */
+.hero-tabs li.active a {
+  color: #1b4d3e; /* Màu chữ xanh đậm */
+}
+
+/* Đường gạch chân màu xanh đậm dưới tab Active */
+.hero-tabs li.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #1b4d3e; /* Màu gạch chân giống trong ảnh */
+}
+body{
+    background-color: #fafafa;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: left;
+    font-family: Times New Roman, Times, serif;
+    color: #333333;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: #ffa500;
+}
+img{
+    max-width: 100%;
+}
+/*style layout */
+.section{
+    float:left;
+    width: 100%;
+}
+.container {
+    float:none;
+    margin: 0 auto; /*top right button left. Auto laf ra giua man hinh*/
+    width: 12000 px; /*day la 3 thong so co dinh*/
+}
+.menu{
+    background-color: green;
+
+}
+.item {
+    width: calc(25% - 30px);
+    /*width: 300px;*/
+    /*height: 300px;*/
+    float: left;/*left right none */
+    margin: 15px;
+    border: none;     
+    box-shadow: 0 4px 12px rgba (0,0,0,12);
+    border-radius: 5px;/*border góc mỗi cạch xpx*/
+    transition: all 300ms;
+}
+.item:hover{
+    transform: translateY(-5px);
+}
+.item img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+.item h3{
+    padding:10px 15px 0;
+    font-size: 24px;
+}
+.item p{
+    padding:0 15px 15px;
+}
+.btn-detail{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+
+    width:calc(100% - 30px);
+
+    height:42px;
+
+    margin:15px auto;
+
+    border:1px solid #064E3B;
+
+    border-radius:25px;
+
+    color:#064E3B;
+
+    background:#fff;
+
+    font-weight:600;
+}
+
+.btn-detail:hover{
+    background:#0f9d78;
+    color:white;
+}
+
+@media screen and (max-width: 1366px) {
+    .item {
+        width: calc(33.3333% - 30px);
+    }
+    .container {
+        width: 1140px;
+    }
+}
+@media screen and (max-width: 922px) {
+    .item {
+        width: calc(50%-30px);
+    }
+    .container {
+        width: 950px;
+    }
+}
+@media screen and (max-width: 766px) {
+    .item {
+        width: calc(100%-30px);
+    }
+    .container {
+        width: 750px;
+    }
+}

@@ -1,0 +1,14 @@
+.box{
+    width: 100px;
+    height: 100px;
+    float:left;
+    margin: 150px;
+    background-color: pink;
+}
+.dark{
+    background-color: black;
+}
+.light{
+    background-color: #fafafa;
+}
+
